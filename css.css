@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Noto Serif:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', sans-serif;
+}
+body
+{
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1500px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1)
+} 
+.container .left_Side
+{
+    position: relative;
+    background: darkgrey;
+    padding: 10px;
+}
+.profileText
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profileText h2
+{
+   color: #fff;
+   font-size: 1.5em;
+   margin-top: 20px;
+   text-transform: uppercase;
+   font-weight: 600;
+   line-height: 1.4em;
+}
+.profileText h3
+{
+    color: #fff;
+    margin: 20px 0px 0px 55%;
+    line-height: 1.5em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container .right_side
+{
+    position: relative;
+    padding: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.about
+{
+    margin-bottom: 50px;
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.title2
+{
+    color: darkgrey;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.about .box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+}
+.about .box .year_company
+{
+    min-width: 210px;
+}
+.about .box .year_company h5
+{
+    text-transform: uppercase;
+    color: darkslategray;
+    font-weight: 600;
+}
+.skills .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
